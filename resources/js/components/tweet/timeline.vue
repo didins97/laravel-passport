@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-header">Timeline</div>
         <div class="card-body">
-        <post></post>
+        <post :tweets="tweets"></post>
         <hr>
             <div class="media mb-3" v-for="(tweet, index) in tweets" :key="index">
                 <img class="mr-3" src="https://place-hold.it/65x65" alt="Generic placeholder image">
