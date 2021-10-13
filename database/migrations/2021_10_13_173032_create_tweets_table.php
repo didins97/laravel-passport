@@ -19,7 +19,7 @@ class CreateTweetsTable extends Migration
             $table->string('body');
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('user_id')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
